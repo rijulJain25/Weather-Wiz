@@ -1,0 +1,266 @@
+*{
+  margin: 0px;
+}
+
+body {
+  height: 100%;
+}
+
+#title{
+  background-image: url("images/1n.png");
+  background-size: 100% 100%;
+
+}
+
+.Title1{
+  text-align: center;
+  color: #FFF;
+  font-size: 60px;
+  font-family: 'Merriweather', serif;
+
+}
+
+.container-fluid{
+  padding: 0px;
+}
+
+.navbar-brand{
+  padding: 3% 6% 8.5%;
+  font-size: 35px;
+}
+
+.navbar-toggler{
+  margin: 3% 6% 8.5%;
+}
+
+#navbarNav{
+  padding: 3% 7% 8.5%;
+  /* margin-right: 10px; */
+}
+
+.one {
+  height: 500px;
+  width: 100%;
+}
+.two {
+  background-image: url("images/back2.jpeg");
+  height: 400px;
+  background-size: 100% 100%;
+  padding-top: 270px;
+  color: #FFF;
+}
+
+.four {
+  position: absolute;
+  top: 70%;
+  left: 12.5%;
+  width: 75%;
+  background-image: url("images/basic.jpeg");
+  background-size: 100% 100%;
+  box-shadow: 2px 3px 10px 10px #9DD6DF;
+  align-items: center;
+}
+
+
+.card{
+
+  border: none;
+  background: #eee;
+
+}
+
+.card .heading{
+  text-align: center;
+  align-items: center;
+  align-self: center;
+  color: #fff;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+
+.search {
+  width: 100%;
+  margin-bottom: auto;
+  margin-top: 20px;
+  height: 50px;
+  background-color: #FFF;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.search-input {
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    margin-top: 5px;
+    caret-color: transparent;
+    line-height: 20px;
+    transition: width 0.4s linear
+}
+
+.search .search-input {
+    padding: 0 10px;
+    width: 100%;
+    caret-color: #536bf6;
+    font-size: 19px;
+    font-weight: 300;
+    color: black;
+    transition: width 0.4s linear;
+}
+
+
+.search-icon {
+    height: 34px;
+    width: 34px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #536bf6;
+    font-size: 10px;
+    bottom: 30px;
+    position: relative;
+    border-radius: 5px;
+    border-color: #536bf6;
+}
+
+.search-icon:hover{
+
+  color: #fff !important;
+}
+
+a:link {
+    text-decoration: none
+}
+
+
+
+.card-inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    border:none;
+    cursor: pointer;
+    transition: all 2s;
+}
+
+.row img{
+  align-self: center;
+}
+
+.row .down{
+  opacity: 0.6;
+}
+
+.row .down:hover{
+  opacity: 1;
+}
+
+
+#pricing{
+  padding: 100px;
+  text-align: center;
+}
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+
+#footer{
+  text-align: center;
+  background-image: url("images/back2.jpeg");
+  background-size: 100% 100%;
+  padding: 4% 15% 2%;
+  color: #FFF;
+}
+
+
+@media (max-width: 991px) {
+
+  .navbar-brand{
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+
+  .navbar-toggler{
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  .one{
+    height: 8px;
+  }
+
+  .four{
+    position: sticky;
+    margin: 0px;
+    top: auto;
+    left: auto;
+    width: 100%;
+    padding-top: 5px;
+    align-items: center;
+  }
+
+  .Title1{
+    font-size: 40px;
+    padding: 30px 10px 30px 10px;
+  }
+
+  .two {
+    padding-top: 0px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1086px){
+  .navbar-brand{
+    margin-right: 0px;
+    padding-right: 0.8%;
+  }
+}
+
+@media (max-width: 757px){
+  .navbar-brand{
+    padding-right: 0;
+    padding-left: 2%;
+    font-size: 120%;
+  }
+  .navbar-toggler{
+    margin-left: 0%;
+    margin-right: 2%;
+    font-size: 8px;
+  }
+}
